@@ -9,8 +9,8 @@ import javax.sql.DataSource;
 @Configuration
 public class FlywayConfig {
 
-    @Bean(name = "cardFlyway", initMethod = "migrate")
-    public Flyway cardFlyway(DataSource dataSource) {
+    @Bean(name = "recipeFlyway", initMethod = "migrate")
+    public Flyway recipeFlyway(DataSource dataSource) {
         return Flyway.configure()
                 .baselineOnMigrate(true)
                 .locations("classpath:migrations")
