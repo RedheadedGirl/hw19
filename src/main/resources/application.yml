@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/sber_db?useUnicode=true&characterEncoding=UTF-8
+    username: postgres
+    password: postgres
